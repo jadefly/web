@@ -1,0 +1,51 @@
+import i18n from '@/locales/index';
+
+export default () => [{
+  prop: 'index',
+  label: i18n.t('Dict.SerialNumber'),
+  width: '50',
+}, {
+  width: '170',
+  prop: 'code',
+  label: i18n.t('Biz.UserDesktop.DocumentNumber'),
+}, {
+  prop: 'typeName',
+  label: i18n.t('Dict.Type'),
+}, {
+  prop: 'unpaidMoney',
+  label: i18n.t('Dict.AmountOfAccount'),
+  width: '120',
+}, {
+  prop: 'paidMoney',
+  label: i18n.t('Dict.RepaymentAmount'),
+}, {
+  prop: 'discountMoney',
+  label: i18n.t('Dict.PreferentialAmount'),
+  width: '120',
+}, {
+  prop: 'remainMoney',
+  label: i18n.t('Dict.AccountBalance'),
+}, {
+  prop: 'isRepay1',
+  label: i18n.t('Biz.UserDesktop.UserDesktopMsg128'),
+  width: '110',
+}, {
+  prop: 'paywayName',
+  label: i18n.t('Dict.SettlementMethod'),
+}, {
+  prop: 'modifyTime',
+  label: i18n.t('Dict.OperationTime'),
+  width: '170',
+}, {
+  prop: 'modifierName',
+  label: i18n.t('Dict.Operator'),
+  width: '120',
+}, {
+  width: '160',
+  prop: 'remark',
+  label: i18n.t('Dict.Remarks'),
+}, {
+  width: '170',
+  prop: 'serial',
+  label: i18n.t('Biz.Order.SerialNum'),
+}];

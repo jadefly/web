@@ -1,0 +1,220 @@
+{
+    "msg": "canyin/pos/bill/addBillView",
+    "code": "1",
+    "data": {
+        "dinnerMode": 2,
+        "dinnerTypeName": "普通就餐",
+        "pointName": "02-厅-02",
+        "salesmanCode": "",
+        "waiterName": "",
+        "addItemList": [
+            {
+                "itemId": "9900000000000030",
+                "itemQty": 1,
+                "code": "001002",
+                "unitName": "只",
+                "pkgType": 0,
+                "itemServiceType": 0,
+                "pointMngId": "9900000000005031",
+                "name": "品项2",
+                "isPackage": false,
+                "itemSizeId": "-1"
+            }
+        ],
+        "title": "开单",
+        "orderOriginId": "1201",
+        "orderOriginList": [
+            {
+                "name": "自来客",
+                "id": "1201"
+            },
+            {
+                "name": "本店营销",
+                "id": "1202"
+            },
+            {
+                "name": "团购",
+                "id": "1203"
+            },
+            {
+                "name": "淘宝预定",
+                "id": "1221"
+            },
+            {
+                "name": "手机点餐预定",
+                "id": "1222"
+            },
+            {
+                "name": "微信预定",
+                "id": "1223"
+            },
+            {
+                "name": "大众点评预定",
+                "id": "1224"
+            },
+            {
+                "name": "网润预定",
+                "id": "1225"
+            },
+            {
+                "name": "支付宝预定",
+                "id": "1226"
+            },
+            {
+                "name": "百度预定",
+                "id": "1227"
+            },
+            {
+                "name": "天财线下Pos预定",
+                "id": "1228"
+            },
+            {
+                "name": "淘宝预点",
+                "id": "1229"
+            },
+            {
+                "name": "手机点餐预点",
+                "id": "1230"
+            },
+            {
+                "name": "微信预点",
+                "id": "1231"
+            },
+            {
+                "name": "大众点评预点",
+                "id": "1232"
+            },
+            {
+                "name": "网润预点",
+                "id": "1233"
+            },
+            {
+                "name": "支付宝预点",
+                "id": "1234"
+            },
+            {
+                "name": "百度预点",
+                "id": "1235"
+            },
+            {
+                "name": "天财线下Pos预点",
+                "id": "1236"
+            },
+            {
+                "name": "淘宝外卖",
+                "id": "1237"
+            },
+            {
+                "name": "手机点餐外卖",
+                "id": "1238"
+            },
+            {
+                "name": "微信外卖",
+                "id": "1239"
+            },
+            {
+                "name": "大众点评外卖",
+                "id": "1240"
+            },
+            {
+                "name": "网润外卖",
+                "id": "1241"
+            },
+            {
+                "name": "支付宝外卖",
+                "id": "1242"
+            },
+            {
+                "name": "百度外卖",
+                "id": "1243"
+            },
+            {
+                "name": "天财线下Pos外卖",
+                "id": "1244"
+            },
+            {
+                "name": "餐道外卖",
+                "id": "1245"
+            },
+            {
+                "name": "美味不用等外卖",
+                "id": "1246"
+            },
+            {
+                "name": "美团外卖",
+                "id": "1247"
+            },
+            {
+                "name": "CRM微信对接外卖",
+                "id": "1248"
+            },
+            {
+                "name": "饿了么外卖",
+                "id": "1249"
+            },
+            {
+                "name": "美闻网站外卖",
+                "id": "1250"
+            },
+            {
+                "name": "红料理外卖",
+                "id": "1251"
+            },
+            {
+                "name": "CRM移动收银外卖",
+                "id": "1252"
+            }
+        ],
+        "waiterCode": "",
+        "pointId": "9900000000000239",
+        "waiters": [],
+        "minCapacity": 1,
+        "controlMode": "1",
+        "salesmanName": "",
+        "salesmanId": "",
+        "isOpenSelf": false,
+        "priLocalEnableMember": false,
+        "pointCode": "02",
+        "isDepositEnable": false,
+        "maxCapacity": 6,
+        "salesmans": [],
+        "deposit": 0,
+        "isNeedWater": false,
+        "waiterId": "",
+        "defCapacity": 4,
+        "orderOriginName": "自来客",
+        "dinnerTypeList": [
+            {
+                "name": "普通就餐",
+                "id": "1301"
+            },
+            {
+                "name": "亲友聚餐",
+                "id": "1302"
+            },
+            {
+                "name": "婚宴",
+                "id": "1303"
+            },
+            {
+                "name": "生日宴",
+                "id": "1304"
+            },
+            {
+                "name": "会议餐",
+                "id": "1305"
+            },
+            {
+                "name": "工作餐",
+                "id": "1306"
+            },
+            {
+                "name": "商务宴请",
+                "id": "1307"
+            }
+        ],
+        "isUpdate": 0,
+        "dinnerTypeId": "1301"
+    },
+    "errCode": null
+}

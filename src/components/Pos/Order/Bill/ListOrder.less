@@ -1,0 +1,262 @@
+@pos-order-bill-list-index-width: 38px;
+@pos-order-bill-list-index-offset-top: 2px;
+@pos-order-bill-list-index-size: 16px;
+@pos-order-bill-list-index-padding-horizontal: 4px;
+@pos-order-bill-list-index-font-size: 12px;
+@pos-order-bill-list-index-bg: #aebfc7;
+@pos-order-bill-list-content-padding-right: 10px;
+@pos-order-bill-list-title-height: 20px;
+@pos-order-bill-list-flag-size: 16px;
+@pos-order-bill-list-flag-font-size: 12px;
+@pos-order-bill-list-flag-space: 4px;
+@pos-order-bill-list-subtotal-width: 88px;
+@pos-order-bill-list-info-height: 18px;
+@pos-order-bill-list-info-font-size: 12px;
+@pos-order-bill-list-method-height: 18px;
+@pos-order-bill-list-method-font-size: 12px;
+@pos-order-bill-list-flag-wrap: 80px;
+
+.a {
+  position: relative;
+  padding-left: @pos-order-bill-list-index-width;
+
+  > .b {
+    position: absolute;
+    left: 0;
+    top: @pos-order-bill-list-index-offset-top;
+    width: @pos-order-bill-list-index-width;
+    text-align: center;
+
+    > em {
+      display: inline-block;
+      height: @pos-order-bill-list-index-size;
+      padding-left: @pos-order-bill-list-index-padding-horizontal;
+      padding-right: @pos-order-bill-list-index-padding-horizontal;
+      font-size: @pos-order-bill-list-index-font-size;
+      line-height: @pos-order-bill-list-index-size;
+      border-radius: @pos-order-bill-list-index-size / 2;
+      background-color: @pos-order-bill-list-index-bg;
+      color: @white;
+      font-style: normal;
+    }
+  }
+
+  > .c {
+    padding-right: @pos-order-bill-list-content-padding-right;
+    >.itemMainMessage {
+      > .d {
+        position: relative;
+        height: @pos-order-bill-list-title-height;
+        padding-right: @pos-order-bill-list-flag-wrap;
+
+        > h3 {
+          height: @pos-order-bill-list-title-height;
+          line-height: @pos-order-bill-list-title-height;
+          font-weight: bold;
+          .text-overflow();
+        }
+
+        > .e {
+          position: absolute;
+          right: 0;
+          top: 0;
+          // .size(@pos-order-bill-list-flag-wrap, @pos-order-bill-list-title-height);
+          padding-top: (
+              @pos-order-bill-list-title-height -
+                @pos-order-bill-list-flag-size
+            ) / 2;
+          text-align: right;
+          font-size: 0;
+
+          > em {
+            display: inline-block;
+            // .square(@pos-order-bill-list-flag-size);
+            min-width: @pos-order-bill-list-flag-size;
+            height: @pos-order-bill-list-flag-size;
+            line-height: @pos-order-bill-list-flag-size;
+            text-align: center;
+            font-size: @pos-order-bill-list-flag-font-size;
+            color: @white;
+            font-style: normal;
+            margin-left: @pos-order-bill-list-flag-space / 2;
+            margin-right: @pos-order-bill-list-flag-space / 2;
+
+            &.give {
+              background-color: @pos-flag-give-color;
+            }
+            &.successConfirmWeigh {
+              background-color:#5cb95c;
+            }
+            &.discount {
+              background-color: @pos-flag-discount-color;
+            }
+
+            &.changed {
+              background-color: @pos-flag-changed-color;
+            }
+
+            &.promotion {
+              background-color: @pos-flag-promotion-color;
+            }
+
+            &.vip {
+              background-color: @pos-flag-vip-color;
+            }
+
+            &.hasten {
+              background-color: @pos-flag-hasten-color;
+            }
+
+            &.package {
+              background-color: @pos-flag-package-color;
+            }
+            &.easy-icon {
+              background-image: url(~@/common/images/pos/bill/easyicon.png);
+            }
+          }
+        }
+      }
+
+      > .f {
+        position: relative;
+        padding-right: @pos-order-bill-list-subtotal-width;
+        height: @pos-order-bill-list-info-height;
+        line-height: @pos-order-bill-list-info-height;
+        font-size: @pos-order-bill-list-info-font-size;
+
+        > .g {
+          float: left;
+        }
+
+        > .h {
+          float: right;
+          width: 52px;
+          height: 18px;
+          line-height: 18px;
+          overflow: hidden;
+          text-align: right;
+        }
+
+        > .i {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: @pos-order-bill-list-subtotal-width;
+          height: 18px;
+          line-height: 18px;
+          overflow: hidden;
+          text-align: right;
+          white-space: nowrap;
+        }
+      }
+      &.pkgItemClickClass {
+        box-shadow: 1px 0px 1px 1px #678;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+      @keyframes addborder{
+        0% {
+          border: 0px solid transparent;
+        }
+        50% {
+          border: 1px solid transparent;
+        }
+        100% {
+          border: 0px solid transparent;
+        }
+      }
+    }
+    > .redemption-box {
+      text-align: right;
+      padding-top: 10px;
+      height: 36px;
+      >span {
+        display: inline-block;
+        border-radius: 12px;
+        border: 1px solid #ffba27;
+        background-color: #fff2b8;
+        padding: 0px 5px;
+        > i {
+          border-radius: 18px;
+          background-color: #ffba27;
+          padding: 1px;
+        }
+      }
+    }
+    > .j {
+      margin-top: 2px;
+      line-height: @pos-order-bill-list-method-height;
+      font-size: @pos-order-bill-list-method-font-size;
+    }
+    > .k {
+
+      > li::after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+      > li {
+        position: relative;
+        font-size: 12px;
+        >.pkgItemMainContent {
+          padding-left: 16px;
+          line-height: 15px;
+          margin-top: 2px;
+          padding-right: 84px;
+          position: relative;
+          >span {
+            display: inline-block;
+          }
+          > i{
+            font-size: 12px;
+            position: absolute;
+            left: 0px;
+          }
+          >.setmealitem {
+            width: 106px;
+            overflow: hidden;
+          }
+          >.setmealitemnum {
+            overflow: hidden;
+            width: 40px;
+            white-space: nowrap;
+            text-align: right;
+            float: right;
+            margin-left:2px;
+          }
+          >.raisePrice {
+            position: absolute;
+            right: 0;
+            width: 62px;
+            text-align: right;
+            &.memberPrice::before{
+              content: "会";
+              position: absolute;
+              left: -10px;
+              top: -1px;
+              background-color: @pos-flag-vip-color;
+              color: #ffffff;
+              padding: 2px;
+            }
+          }
+        }
+        >.pkgItemServeContent {
+          margin-left: 16px;
+          // white-space: nowrap;
+          overflow: hidden;
+          &.bsIdPkgItemServeContent {
+            padding-right: 50px;
+            position: relative;
+            >.methodPriceTotal {
+              position: absolute;
+              right: 0px;
+              width: 50px;
+              text-align: right;
+              top:0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

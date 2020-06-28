@@ -1,0 +1,45 @@
+.keyboard-warp{
+  z-index: 999999;
+  border-radius: 4px;
+  &.popover-keyboard{
+    background-color: #f5f5f5;
+    border: 1px solid #b5b5b5;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+    position: fixed;
+  }
+  .cursor-img{
+    position: absolute;
+    margin: auto;
+    &.top{
+      left: 0;right: 0;
+      bottom: -12px;
+    }
+    &.bottom{
+      transform:rotate(180deg);
+      left: 0;right: 0;
+      top: -12px;
+    }
+    &.left{
+      transform:rotate(-90deg);
+      right: -19px;
+      bottom: 0;
+      top: 0;
+    }
+    &.right{
+      transform:rotate(90deg);
+      left: -19px;
+      bottom: 0;
+      top: 0;
+    }
+    &.top-right{
+      left: 25%;
+      bottom: -12px;
+    }
+    &.fixed {
+      transform:rotate(180deg);
+      left: 0;
+      right: 0;
+      top: -12px;
+    }
+  }
+}

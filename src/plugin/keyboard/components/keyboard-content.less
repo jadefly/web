@@ -1,0 +1,43 @@
+@item-height:52px;
+@item-width:52px;
+@item-margin: 2px;
+.keyboard-content-warp{
+  padding: 7.5px;
+  overflow: hidden;
+  display: inline-block;
+  .keyboard-item-warp{
+    float: left;
+  }
+  .key-item{
+    width: @item-width;
+    height: @item-height;
+    margin: @item-margin;
+    border: 1px solid #b5b5b5;
+    background-color: #fff;
+    border-radius: 4px;
+    .icon-text,.icon-pos-keyboard-back{
+      position: relative;
+    }
+    .icon-text{
+      top: 5px
+    }
+    .icon-pos-keyboard-back{
+      top: 2px;
+    }
+    &:hover{
+      background-color: #eee;
+    }
+    &:active{
+      background-color: #b5b5b5;
+    }
+    &.big-item{
+      height: (@item-height + @item-margin) * 2;
+    }
+    &.medium-item {
+      height: @item-height * 3 + @item-margin * 4;
+    }
+    &.largest-item{
+      height: @item-height * 4 + @item-margin * 6;
+    }
+  }
+}

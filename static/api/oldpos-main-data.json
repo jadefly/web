@@ -1,0 +1,65 @@
+{
+  "code": 1,
+  "data": {
+    "title": "吾享餐饮管理系统",
+    "versionType": "beta",
+    "chainBranch": true,
+    "brandIcon": "wuxiang",
+  "posInfo": {
+      "id": "1234567890123",
+      "mode": 1,
+      "name": "POS08",
+      "operator": "管理员"
+    },
+    "statistics": {
+      "businessDay": {
+        "opened": 2,
+        "settled": 1,
+        "unsettle": 1
+      },
+      "currentMarket": {
+        "opened": 1,
+        "settled": 1,
+        "unsettle": 1
+      }
+    },
+    "moduleList": [
+      {
+        "moduleName": "order",
+        "name": "点餐",
+        "keyName": "F1",
+        "default": false
+      },
+      {
+        "moduleName": "reserve",
+        "name": "预点",
+        "keyName": "F2",
+        "default": false
+      },
+      {
+        "moduleName": "booking",
+        "name": "预订",
+        "keyName": "F3",
+        "default": false
+      },
+      {
+        "moduleName": "takeout",
+        "name": "外卖",
+        "keyName": "F4",
+        "default": true
+      },
+      {
+        "moduleName": "crm",
+        "name": "会员",
+        "keyName": "F5",
+        "default": false
+      },
+      {
+        "moduleName": "supply",
+        "name": "订货",
+        "keyName": "F6",
+        "default": false
+      }
+    ]
+  }
+}

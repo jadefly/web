@@ -1,0 +1,11 @@
+{
+  "code": 1,
+  "data": {
+    "changeWaitresses": "A",
+    "noKitchenPrint": "B",
+    "teamAddOrder": "C",
+    "copyItem": "D",
+    "teamVertifyTicket": "E",
+    "other": "F"
+  }
+}

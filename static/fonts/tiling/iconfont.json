@@ -1,0 +1,44 @@
+{
+  "id": "1812082",
+  "name": "商龙",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15492966",
+      "name": "canyinposbillbizbusinessreport",
+      "font_class": "canyinposbillbizbusinessreport",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "15488268",
+      "name": "bill",
+      "font_class": "bill",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "14648548",
+      "name": "半价",
+      "font_class": "half",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "14648549",
+      "name": "赠送",
+      "font_class": "zengsong",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "14648550",
+      "name": "删除",
+      "font_class": "delete",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    }
+  ]
+}

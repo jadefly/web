@@ -1,0 +1,3 @@
+// 初始化
+export const KITCHEN_INIT = 'KITCHEN_INIT';
+export const KITCHEN_REMINDCONFIG = 'KITCHEN_REMINDCONFIG';

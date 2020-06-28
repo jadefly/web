@@ -1,0 +1,125 @@
+@pos-flag-give-color: #f24f64;
+@pos-flag-discount-color: #5bbd66;
+@pos-flag-changed-color: #ce4ff4;
+@pos-flag-promotion-color: #f7b135;
+@pos-flag-vip-color: #e0ba4d;
+@pos-flag-hasten-color: #4fbef3;
+@pos-flag-package-color: #3186bf;
+
+.pos-bill-items{
+  width: 100%;
+  > .name{
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 87px;
+    position: relative;
+    overflow: hidden;
+    >.markText {
+      position: absolute;
+      right: 0px;
+      width: 87px;
+      text-align: right;
+      color: #ffffff;
+      font-weight: 300;
+      >em {
+        font-style: normal;
+        padding: 1px;
+        &.give {
+          background-color: @pos-flag-give-color;
+        }
+        &.successConfirmWeigh {
+          background-color: #5cb95c;
+        }
+        &.discount {
+          background-color: @pos-flag-discount-color;
+        }
+
+        &.changed {
+          background-color: @pos-flag-changed-color;
+        }
+
+        &.promotion {
+          background-color: @pos-flag-promotion-color;
+        }
+
+        &.vip {
+          background-color: @pos-flag-vip-color;
+        }
+
+        &.hasten {
+          background-color: @pos-flag-hasten-color;
+        }
+
+        &.package {
+          background-color: @pos-flag-package-color;
+        }
+      }
+    }
+  }
+  .setMealPrice{
+    display: flex;
+    margin-bottom: 5px;
+    .price{
+      width: 45%;
+    }
+    .count{
+      width: 25%;
+    }
+    .priceTotal{
+      width: 30%;
+      text-align: right;
+    }
+  }
+  .setMealDetailed{
+    border-top: 1px solid #b5b5b5;
+    padding: 5px 0;
+    color: #666666;
+    li{
+      clear: both;
+      >div {
+        float: left;
+      }
+      .name{
+        width: 45%;
+      }
+      .count{
+        width: 25%;
+      }
+      .raisePrice {
+        width: 30%;
+        float: left;
+        text-align: right;
+        >.memberRaisePrice {
+          display: block;
+          position: relative;
+          >span {
+            position: absolute;
+            left: -10px;
+            padding: 1px;
+            top: -1px;
+            background-color: @pos-flag-vip-color;
+            color: #ffffff;
+          }
+        }
+      }
+      .Remarks {
+        width: 100%;
+        &.bsIdRemarks {
+          padding-right: 54px;
+          position: relative;
+          >.methodPriceTotal {
+            width: 54px;
+            position: absolute;
+            right: 0;
+            text-align: right;
+            margin-right: 3px;
+          }
+        }
+      }
+    }
+  }
+  .Remarks{
+    line-height: 18px;
+    font-size: 12px;
+  }
+}
