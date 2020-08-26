@@ -1,0 +1,9 @@
+body,html,div,p,img,a,section,header,footer,span,strong,h1,h2,h3,h4,h5,h6,ul,li,dl,dd,dt,table,tr,td,input,textarea,form,button{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+body,html{
+  width: 100%;
+  height: 100%;
+}

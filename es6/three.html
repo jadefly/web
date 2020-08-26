@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>three</title>
+    <style>
+      *{padding:0;margin:0;}
+    </style>
+  </head>
+  <body>
+    <div class="mian">
+      <!-- <canvas width="500" height="500" id="box"></canvas> -->
+    </div>
+  </body>
+  <script src="./base/three.js"></script>
+  <script>
+    // let box = document.querySelector('#box');
+    // let g1 = box.getContext('2d');
+    // g1.moveTo(0,0);
+    // g1.lineTo(100,100);
+    // g1.lineTo(0,200);
+    // g1.stroke(); //把点连成直线绘制出来
+
+    // 1.场景
+    let scene = new THREE.Scene();
+    // 2.透视相机
+    let camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight,0.1, 1000);
+    // 3.渲染器
+    let renderer = new THREE.WebGLRenderer();
+    // 设置渲染器的大小为窗口的内宽度，也就是内容区的宽度
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+    // 4.添加物体到场景中
+    // 立方体 (width, height, depth, segmentsWidth, segmentsHeight, segmentsDepth, materials, sides)
+    var geometry = new THREE.CubeGeometry(1,1,1);
+    var material = new THREE.MeshBasicMaterial({color: 0x00ff00});
+    var cube = new THREE.Mesh(geometry, material); scene.add(cube);
+    camera.position.z = 5;
+    // 渲染循环
+    function render() {
+        requestAnimationFrame(render); // 让浏览器去执行一次参数中的函数 形成循环
+        cube.rotation.x += 0.1;
+        cube.rotation.y += 0.1;
+        // 5.渲染
+        renderer.render(scene, camera);
+    }
+    render();
+  </script>
+</html>

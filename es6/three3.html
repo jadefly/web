@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>three</title>
+    <style>
+      *{padding:0;margin:0;}
+    </style>
+  </head>
+  <body>
+    <div class="mian">
+    </div>
+  </body>
+  <script src="./base/three.js"></script>
+  <script>
+    // 1.场景
+    let scene = new THREE.Scene();
+    // 2.相机
+    let camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 500 );
+    camera.position.set( 0, 0, 100 );
+    camera.lookAt( 0, 0, 0 );
+
+    // 3.渲染器
+    let renderer = new THREE.WebGLRenderer();
+    // 设置渲染器的大小为窗口的内宽度，也就是内容区的宽度
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+    renderer.setClearColor(0xFFFFFF, 1.0);
+    // 4.添加物体到场景中
+    var point1 = new THREE.Vector3(-10, 0, 0);
+    // point1.set(4,8,9); // 使用set方法设置点
+    // var material = new THREE.LineBasicMaterial( { color: 0x0000ff } );
+    var material = new THREE.LineBasicMaterial( { vertexColors: true, linewidth:100 } );
+    console.log(material)
+    var geometry = new THREE.Geometry();
+    // geometry.vertices.push(new THREE.Vector3( 0, 0, 0));
+    geometry.vertices.push(point1);
+    geometry.vertices.push(new THREE.Vector3( 0, 10, 0) );
+    geometry.vertices.push(new THREE.Vector3( 10, 0, 0) );
+
+    var color1 = new THREE.Color( 0x444444 ),
+        color2 = new THREE.Color( 0xFF0000 );
+    geometry.colors.push( color1, color2 );
+
+    var line = new THREE.Line( geometry, material);
+
+    // 5.渲染
+    scene.add( line );
+    renderer.render( scene, camera );
+  </script>
+</html>
