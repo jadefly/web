@@ -1,0 +1,110 @@
+#login {
+    height: 100%;
+    width: 100%;
+    background: #f0f3fa;
+    font-family: 'Microsoft YaHei';
+    .form {
+        width: 370px;
+        height: 450px;
+        border-width: 1px solid #d6e0f7;
+        border-radius: 4px;
+        background: #fff;
+        box-shadow: 0px 6px 9px 0px rgba(10,33,100,0.17);    
+        position:absolute;
+        left:0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        padding: 0px 50px;
+
+        .el-form-item {
+            margin-bottom: 7px;
+            height: 47px;
+            border-bottom: 1px solid #c8c9ca;
+
+            .el-form-item__label {
+                font-size: 12px;
+                &::before {
+                    display: none;
+                }
+            }
+           
+            .el-input__inner {
+                background-color: none !important;
+                background: none !important;
+                border: none !important;
+                padding-left: 40px !important;
+                color: #c8c9ca !important;
+            }
+            .el-form-item__content {
+                text-align: left;
+                margin-left: 0px !important;
+            }
+        }
+
+        .el-button {
+            width:100%;
+            height: 40px;
+            line-height: 10px;
+            background: #4877e8;
+            color: #fff;
+            border-radius: 30px;
+            margin-top: 35px;
+            letter-spacing: 1px;
+            span {
+                font-family: '黑体';
+                font-size: 16px !important;
+            }
+        }
+
+        .icon-login_zh, .icon-login_mm, .icon-login_yzm {
+            font-size: 18px !important;
+            line-height: 45px !important;
+            color: #666 !important;
+        }
+
+        .icon-login_yzm {
+            padding-left: 6px;
+        }
+
+        .cerify-code-panel {
+            position: absolute;
+            bottom: 145px;
+            width: 168px;
+            left: 100px;
+            height: 36px;
+
+            .verify-change-area {
+                display: none;
+            }
+
+            .verify-input-area {
+                width: 120%;
+
+                .varify-input-code {
+                    border: none;
+                    background: none;
+                    height: 32px;
+                    outline:none;
+                    color: #c8c9ca !important;
+                }
+            }
+
+            .verify-code {
+                float: right;
+                border: none;
+                background-color: #f0f3fa !important;
+                letter-spacing: -4px;
+                padding-top: 10px;
+                span {
+                    font-size: 20px !important;
+                }
+            }
+        }
+
+        .verify-btn {
+            display: none;
+        }
+    }
+}

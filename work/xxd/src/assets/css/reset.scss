@@ -1,0 +1,367 @@
+* { margin: 0; padding: 0; }
+
+html,
+body {
+    font-family: 'Microsoft YaHei', SimSun, sans-serif, 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB';
+    height: 100%;
+    min-height: 100%;
+    background: #f0f3fa;
+    font-size: 12px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+a {
+    color: #4078c0;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button,
+input,
+select,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    outline: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+ul, li, dl, dd, dt {
+    list-style: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img,
+embed,
+iframe,
+object,
+audio,
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+iframe {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+    text-align: left;
+}
+
+.txtC { text-align: center;}
+.selectW { width: 280px; }
+.fl{ float: left;}
+.fr{ float: right;}
+/* 清除浮动 */
+.ks-clear:after,
+.clear:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.ks-clear,
+.clear {
+    *zoom: 1;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+// 隐藏百度地图logo及版权信息
+.anchorBL {
+    display: none;
+}
+
+.padding-right-20 {
+    padding-right: 20px !important;
+}
+
+
+.form-line-height {
+    margin: 10px 0 5px 0;
+    color: #666;
+    line-height: 23px;
+}
+
+.text-gray {
+    color: #a4aaba;
+}
+
+.text-yellow {
+    color: #f9ae26;
+}
+
+.text-blue {
+    color: #5a8bff;
+}
+
+.width-64 {
+    width: calc(100% - 64px) !important;
+    transition: all linear 0.5s;
+}
+
+.width-200 {
+    width: calc(100% - 200px) !important;
+    transition: all linear 0.5s;
+}
+
+/*placeholder样式-开始*/
+input::-webkit-input-placeholder{
+    color: #c8c9ca;
+    font-size: 12px;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color: #c8c9ca;
+    font-size: 12px;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#c8c9ca;
+    font-size: 12px;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color:#c8c9ca;
+    font-size: 12px;
+}
+/*placeholder样式-结束*/
+
+
+//弹窗
+.el-dialog {
+    .el-dialog__header {
+        background: #58a1ed;
+        .el-dialog__title{
+            color: #fff;
+            font-size: 14px !important;
+        }
+    }
+    .el-dialog__headerbtn{
+        .el-dialog__close {
+            color: #fff !important;
+        }
+    }
+    .el-dialog__footer {
+        text-align: center;
+    }
+    .el-input__inner {
+        // width: 300px !important;
+    }
+    .el-select {
+        margin-bottom: 22px;
+    }
+}
+
+//分页
+.footer {
+    font-size: 12px;
+    padding: 10px 0 20px 20px;
+    line-height: 22px;
+    
+    .el-pagination {
+      display: inline-block;
+
+      .el-pager {
+        li.active {
+          background: #409EFF;
+          color: #fff;
+          border-radius: 3px;
+        }
+      }
+
+      .el-pagination__jump {
+        margin-left: 12px;
+
+        .el-pagination__editor.el-input {
+          width: 50px;
+          padding: 0 8px;
+        }       
+      }
+    }
+}
+
+//主体内容中input，避免与分页中input冲突
+.el-col {
+    .el-form-item {
+        margin-bottom: 0px;
+    }
+}
+
+//switch开关
+.el-switch {
+    margin-right: 10px;
+}
+
+.el-transfer-panel__body {
+    height: 346px;
+    .el-transfer-panel__list {
+        height: 100%;
+    }
+    .el-checkbox {
+        width: 80%;
+    }
+}
+
+.el-popover__reference {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    padding: 5px;
+    border: none;
+}
+
+.el-checkbox {
+    line-height: 28px;;
+}
+
+.el-page-header {
+    line-height: 45px;
+    font-weight: bold;
+    .el-icon-back, .el-page-header__content{
+        font-size: 15px !important;
+    }
+    .el-icon-back {
+        color: #409EFF;
+    }
+}
+
+/*计数*/
+.el-input-number--small {
+    width: 90px;
+}
+.el-tabs--border-card>.el-tabs__content {
+    padding: 10px;
+}
+.el-input-number.is-controls-right .el-input__inner {
+    padding-left: 5px;
+}
+.grade-info {
+    .el-input-number--mini {
+        width: 80px;
+    }
+}
+
+/*tabs*/
+.el-tabs__item {
+    height: 30px;
+    line-height: 30px;
+}
+
+.labelFt12 {
+  .el-checkbox__label {
+    font-size:12px;
+  }
+}
+
+.el-icon-search { cursor: pointer;}
+.el-icon-search:hover { color: #4877e6;}
+
+
+/*自定义滚动条 */
+.scrollCss {
+    &::-webkit-scrollbar {
+      width: 8px;
+      margin-right: 1px;
+      background-color: #f0f3fa;
+      border-radius: 4px;
+    }
+  
+    /*定义滚动条轨道 内阴影+圆角*/
+    &::-webkit-scrollbar-track {
+      // -webkit-box-shadow: inset 0 0 6px rgba(45, 37, 102, 0.3);
+      border-radius: 4px;
+      background-color: #f0f3fa;
+    }
+  
+    /*定义滑块 内阴影+圆角*/
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      // -webkit-box-shadow: inset 0 0 6px rgba(45, 37, 102, 0.3);
+      background-color: #a0b3dd;
+    }
+  }
+  /*页面存在滚动的情况下，时间选择插件位置定位在页面中央*/
+  .centerPicker{
+    top:50% !important;
+    transform:translateY(-50%) ;
+}
+/*el-table自定义滚动条 */
+.scroll_table {
+    ::-webkit-scrollbar {
+      width: 8px;
+      height:8px;
+      margin-right: 1px;
+      background-color: #f0f3fa;
+      border-radius: 4px;
+    }
+  
+    /*定义滚动条轨道 内阴影+圆角*/
+    ::-webkit-scrollbar-track {
+      // -webkit-box-shadow: inset 0 0 6px rgba(45, 37, 102, 0.3);
+      border-radius: 4px;
+      background-color: #f0f3fa;
+    }
+  
+    /*定义滑块 内阴影+圆角*/
+    ::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      // -webkit-box-shadow: inset 0 0 6px rgba(45, 37, 102, 0.3);
+      background-color: #a0b3dd;
+    }
+  }
+
+  .no-pt{
+      .el-card__body{
+          padding-top:0
+      }
+  }

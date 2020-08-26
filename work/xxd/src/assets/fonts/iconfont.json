@@ -1,0 +1,121 @@
+{
+  "id": "1992748",
+  "name": "兴先道管理系统",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "兴先道管理系统",
+  "glyphs": [
+    {
+      "icon_id": "9654401",
+      "name": "时间",
+      "font_class": "time",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "14742534",
+      "name": "周报",
+      "font_class": "userSet",
+      "unicode": "e84f",
+      "unicode_decimal": 59471
+    },
+    {
+      "icon_id": "16695963",
+      "name": "单据管理",
+      "font_class": "handoverIndex",
+      "unicode": "e850",
+      "unicode_decimal": 59472
+    },
+    {
+      "icon_id": "1912320",
+      "name": "浏览器-应用",
+      "font_class": "tasks",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "3490719",
+      "name": "首页 (未选中)",
+      "font_class": "home",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "6915787",
+      "name": "窗口",
+      "font_class": "config",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "13275573",
+      "name": "单据管理",
+      "font_class": "handover",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "16589022",
+      "name": "报备",
+      "font_class": "report",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "1488080",
+      "name": "圆圈",
+      "font_class": "yuanquan",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "2510092",
+      "name": "delete",
+      "font_class": "delete",
+      "unicode": "e769",
+      "unicode_decimal": 59241
+    },
+    {
+      "icon_id": "7275084",
+      "name": "Add (with circle) (F",
+      "font_class": "add",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "736603",
+      "name": "check-box-blank",
+      "font_class": "checkboxblank",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "7826095",
+      "name": "check_box",
+      "font_class": "baseline-check_box-px",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "16389003",
+      "name": "money",
+      "font_class": "money",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "16387147",
+      "name": "已完成项目",
+      "font_class": "yiwanchengxiangmu",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "16387148",
+      "name": "上传文件",
+      "font_class": "shangchuanwenjian",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./icomoon.eot?hlo1jn');
+  src:  url('./icomoon.eot?hlo1jn#iefix') format('embedded-opentype'),
+    url('./icomoon.ttf?hlo1jn') format('truetype'),
+    url('./icomoon.woff?hlo1jn') format('woff'),
+    url('./icomoon.svg?hlo1jn#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon_fanhui:before {
+  content: "\e900";
+  color: #5a8bff;
+}
+.icon-icon_gengxin:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-icon_khjkr:before {
+  content: "\e902";
+}
+.icon-icon_sousuo:before {
+  content: "\e903";
+  color: #cce2f4;
+}
+.icon-login_mm:before {
+  content: "\e904";
+  color: #666;
+}
+.icon-login_yzm:before {
+  content: "\e905";
+}
+.icon-login_zh:before {
+  content: "\e906";
+}
+.icon-config:before {
+  content: "\e907";
+}
+.icon-loophole:before {
+  content: "\e908";
+}
+.icon-home:before {
+  content: "\e909";
+}
+.icon-tasks:before {
+  content: "\e90a";
+}
+.icon-menu_zhedie-left:before {
+  content: "\e90b";
+  color: #fff;
+}
+.icon-menu_zhedie-right:before {
+  content: "\e90c";
+  color: #fff;
+}
+.icon-table_shaixuan:before {
+  content: "\e90d";
+  color: #666;
+}
+.icon-table_zdy:before {
+  content: "\e90e";
+  color: #b8b9b9;
+}
+.icon-top_tuichu:before {
+  content: "\e90f";
+  color: #fff;
+}
+.icon-top_xiaoxi:before {
+  content: "\e910";
+  color: #cce2f4;
+}
+.icon-icon_zhuanjiao:before {
+  content: "\e911";
+}
+.icon-icon_tuihui:before {
+  content: "\e912";
+}
+.icon-icon_zhipai:before {
+  content: "\e913";
+  color: #666;
+}
+.icon-userSet:before {
+  content: "\e91c";
+  color: #666;
+}
